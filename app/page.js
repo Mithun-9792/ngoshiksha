@@ -35,10 +35,12 @@ export default function Home() {
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Image on Left */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img
+            <Image
               src="/assets/logo.png"
               alt="Home"
               className="rounded-xl shadow-lg max-w-full h-auto p-3"
+              height={350}
+              width={350}
             />
           </div>
 
@@ -58,7 +60,7 @@ export default function Home() {
         id="about"
         className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800 px-4"
       >
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
+        <h2 className="text-4xl font-bold m-4">About Us</h2>
         <p className="text-lg mb-6 max-w-xl text-center">
           We provide the best solutions to help you grow your business online.
         </p>
