@@ -23,6 +23,11 @@ export default function Home() {
                 Support
               </a>
             </li>
+            <li>
+              <a href="#contact" className="hover:text-blue-500">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
