@@ -2,102 +2,148 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 bg-white shadow-md">
+        <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+          {/* <div className="text-2xl font-bold text-blue-600">MySite</div> */}
+          <ul className="flex space-x-6 font-medium text-gray-700">
+            <li>
+              <a href="#home" className="hover:text-blue-500">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-blue-500">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#support" className="hover:text-blue-500">
+                Support
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      {/* Sections */}
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-500 text-white px-6"
+      >
+        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Image on Left */}
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src="/assets/logo.png"
+              alt="Home"
+              className="rounded-xl shadow-lg max-w-full h-auto p-3"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+
+          {/* Content on Right */}
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              Anubhav Shikshan Evam Jan Kalyan Sewa Sansthan
+            </h1>
+            <p className="text-lg mb-6">
+              Empowering communities through education, awareness, and welfare.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section
+        id="about"
+        className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800 px-4"
+      >
+        <h2 className="text-4xl font-bold mb-4">About Us</h2>
+        <p className="text-lg mb-6 max-w-xl text-center">
+          We provide the best solutions to help you grow your business online.
+        </p>
+
+        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <Image
+              src="/assets/about.jpeg"
+              alt="Home"
+              className="rounded-xl shadow-lg max-w-full h-auto p-3"
+              height={300}
+              width={300}
+            />
+          </div>
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <p className="text-lg mb-6">
+              Founded with the belief that change begins with knowledge and
+              service, Anubhav Shikshan Evam Jan Kalyan Sewa Sansthan is a
+              non-profit organization dedicated to social development. Our
+              programs are designed to address the needs of marginalized
+              communities by offering access to basic education, skill
+              development, women and child welfare, health camps, and community
+              support initiatives. We work hand-in-hand with local volunteers,
+              educators, and social workers to ensure that every effort brings
+              meaningful impact.
+            </p>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-12 m-2">
+          {/* Mission */}
+          <div className="p-6 border-l-4 border-blue-500 bg-gray-50 shadow rounded-lg">
+            <h3 className="text-2xl font-semibold mb-3 text-blue-600">
+              Our Mission
+            </h3>
+            <p className="text-lg leading-relaxed">
+              To empower individuals and uplift communities through accessible
+              education, health awareness, and sustainable welfare programs that
+              bring real change to people’s lives.
+            </p>
+          </div>
+
+          {/* Vision */}
+          <div className="p-6 border-l-4 border-purple-500 bg-gray-50 shadow rounded-lg">
+            <h3 className="text-2xl font-semibold mb-3 text-purple-600">
+              Our Vision
+            </h3>
+            <p className="text-lg leading-relaxed">
+              To build a self-reliant and educated society where every person
+              has the opportunity to grow, contribute, and lead a life of
+              dignity and purpose.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="support"
+        className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-800 px-4"
+      >
+        <h2 className="text-4xl font-bold mb-4">Support Our Work</h2>
+        <p className="text-lg mb-6 max-w-xl text-center">
+          You Can Help Us Make a Difference
+        </p>
+        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src="/assets/img1.jpeg"
+              alt="Home"
+              className="rounded-xl shadow-lg max-w-full h-auto p-3"
+            />
+          </div>
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <p className="text-lg mb-6">
+              Your support can provide a child with education, a family with
+              healthcare, and a woman with the skills to lead a self-reliant
+              life. At Anubhav Shikshan Evam Jan Kalyan Sewa Sansthan, we
+              believe that real change comes from community support.{" "}
+              <strong>
+                Make a donation today and be a part of our mission to educate,
+                empower, and uplift.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
