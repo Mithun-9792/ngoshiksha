@@ -176,8 +176,8 @@ export default function Home() {
                   <strong>GSTIN:</strong> 09AACAA9604R2Z6
                 </li>
                 <li>
-                  <strong>Address:</strong> 538KH/428A Deen Dayal Nagar, Sitapur
-                  Road, Lucknow
+                  <strong>Address:</strong> SOHAWAL, ANTPUR, PORA MOTINAGAR,
+                  SOHAWAL, Faizabad, UTTAR PRADESH, 224201
                 </li>
               </ul>
             </div>
