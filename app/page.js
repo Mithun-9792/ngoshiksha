@@ -146,6 +146,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="contact" className="py-20 bg-gray-100 text-gray-800 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
+
+          <div className="grid md:grid-cols-2 gap-8 bg-white shadow-md rounded-lg p-8">
+            {/* Left Column */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
+              <ul className="space-y-4 text-lg">
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:mata9471m@gmail.com"
+                    className="text-blue-600 hover:underline"
+                  >
+                    mata9471m@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <strong>Mobile:</strong> +91 9452485666
+                </li>
+                <li>
+                  <strong>GSTIN:</strong> 09AACAA9604R2Z6
+                </li>
+                <li>
+                  <strong>Address:</strong> 538KH/428A Deen Dayal Nagar, Sitapur
+                  Road, Lucknow
+                </li>
+              </ul>
+            </div>
+
+            {/* Right Column */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/contact.png"
+                alt="Home"
+                className="rounded-xl shadow-lg max-w-full h-auto p-3"
+                height={300}
+                width={300}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
